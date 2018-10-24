@@ -1,7 +1,7 @@
 import numpy
 import fractions
 numpy.set_printoptions(formatter={'all':lambda x: str(fractions.Fraction(x).limit_denominator())})
-
+ 
 def get_least_square(mInput, mResult):
     mInputTranspose = numpy.transpose(mInput)
     mAtA = numpy.matmul(mInputTranspose, mInput)
